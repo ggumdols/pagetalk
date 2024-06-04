@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".auth.IntroActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/loginBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_radius_green"
+                    android:text="로그인"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/joinBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_radius_gray"
+                    android:text="회원가입"
+                    android:textStyle="bold" />
+
+                <!-- Google Sign-In Button -->
+                <Button
+                    android:id="@+id/googleSignInBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_radius_gray"
+                    android:text="Sign in with Google"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/login_linearLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="100dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    app:layout_constraintTop_toBottomOf="@+id/joinBtn">
+
+                    <TextView
+                        android:id="@+id/findIdTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:text="아이디 찾기"
+                        android:textColor="#aeaeae" />
+                    <TextView
+                        android:id="@+id/findPwTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="비밀번호 찾기"
+                        android:textColor="#aeaeae" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/intro_appname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="80dp"
+                android:text="Pagetalk" />
+
+            <TextView
+                android:id="@+id/intro_slogan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="140dp"
+                android:text="독서를 공유하는 우리들의 공간" />
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
